@@ -1,0 +1,27 @@
+body{margin-top:20px;
+    background:#eee;
+    }
+
+/*form css*/
+body{color: #000;overflow-x: hidden;height: 100%;background-image: url("https://i.imgur.com/GMmCQHC.png");background-repeat: no-repeat;background-size: 100% 100%}.card{padding: 30px 40px;margin-top: 60px;margin-bottom: 60px;border: none !important;box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2)}.blue-text{color: #00BCD4}.form-control-label{margin-bottom: 0}input, textarea, button{padding: 8px 15px;border-radius: 5px !important;margin: 5px 0px;box-sizing: border-box;border: 1px solid #ccc;font-size: 18px !important;font-weight: 300}input:focus, textarea:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;border: 1px solid #00BCD4;outline-width: 0;font-weight: 400}.btn-block{text-transform: uppercase;font-size: 15px !important;font-weight: 400;height: 43px;cursor: pointer}.btn-block:hover{color: #fff !important}button:focus{-moz-box-shadow: none !important;-webkit-box-shadow: none !important;box-shadow: none !important;outline-width: 0}
+
+
+    .card {
+        box-shadow: 0 20px 27px 0 rgb(0 0 0 / 5%);
+    }
+    .avatar.sm {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: .818125rem;
+    }
+    .table-nowrap .table td, .table-nowrap .table th {
+        white-space: nowrap;
+    }
+    .table>:not(caption)>*>* {
+        padding: 0.75rem 1.25rem;
+        border-bottom-width: 1px;
+    }
+    table th {
+        font-weight: 600;
+        background-color: #eeecfd !important;
+    }

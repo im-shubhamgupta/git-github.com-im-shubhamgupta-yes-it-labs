@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,16 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::middleware([
-    'auth:sanctum',
-    config('jetstream.auth_session'),
-    'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return view('dashboard');
-    })->name('dashboard');
+Route::get('/mod_form', function () {
+    return view('mod_form');
 });
+Route::get('/',[UserController::class,'index']);
+Route::get('/moduser/{id}',[UserController::class,'index']);
+Route::post('/moduser',[UserController::class,'mod_user'])->name('user.moduser');
+Route::get('/delete/{id}',[UserController::class,'delete']);
+
