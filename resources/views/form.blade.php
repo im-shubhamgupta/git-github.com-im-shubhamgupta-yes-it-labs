@@ -35,6 +35,7 @@
                         Distance</a>
                     <a class="btn btn-warning ml-auto mb-3" data-toggle="modal" data-target="#AudioModal">Audio
                         Length</a>
+                    <a class="btn btn-info ml-auto mb-3" href="{{ url('/export-spreadsheet') }}" >Export Data</a>
                     <div class="card-header d-flex justify-content-between align-items-center">
 
                     </div>
@@ -103,7 +104,7 @@
                 <h5 class="modal-title" id="exampleModalLabel">Find Distance by Latitude and Longitude</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
-                </button>  
+                </button>
             </div>
             <div class="modal-body">
                 <div class="">

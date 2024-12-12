@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SpreadsheetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,7 @@ Route::get('/mod_form', function () {
 });
 Route::get('/',[UserController::class,'index']);
 Route::get('/moduser/{id}',[UserController::class,'index']);
+Route::get('/export-spreadsheet', [SpreadsheetController::class, 'export']);
 Route::post('/moduser',[UserController::class,'mod_user'])->name('user.moduser');
 Route::get('/delete/{id}',[UserController::class,'delete']);
 
